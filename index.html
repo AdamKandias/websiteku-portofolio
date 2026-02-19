@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Adam Kandias</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS Eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===== HEADER dengan FLEXBOX ===== -->
+    <header class="header">
+        <div class="logo">
+            <h2>Dias<span>.dev</span></h2>
+        </div>
+
+        <!-- Navbar Flexbox -->
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <!-- DROPDOWN MENU - hover & click -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#web-dev">Web Development</a></li>
+                        <li><a href="#mobile-dev">Mobile Development</a></li>
+                        <li><a href="#ui-ux">UI/UX Design</a></li>
+                        <li><a href="#consulting">IT Consulting</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== HERO SECTION dengan FLEXBOX ===== -->
+        <section id="home" class="hero">
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+                    alt="Foto Profil Adam Kandias">
+            </div>
+
+            <div class="hero-text">
+                <h1>Adam Kandias</h1>
+                <p class="tagline">Frontend Developer & UI/UX Enthusiast</p>
+                <p class="description">
+                    Manusia biasa yang sangat passionate dalam dunia coding.
+                    Saat ini aktif sebagai Fullstack Developer di Digirock Academy.
+                </p>
+
+                <!-- SOCIAL LINKS - FLEXBOX -->
+                <div class="social-links">
+                    <a href="https://github.com/AdamKandias" target="_blank" class="social-link github">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/AdamKandias" target="_blank" class="social-link linkedin">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://instagram.com/kndiaass" target="_blank" class="social-link instagram">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://wa.me/6285175011745" target="_blank" class="social-link whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Lihat Project</a>
+                    <a href="https://drive.google.com" target="_blank" class="btn btn-outline">Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT SECTION dengan GRID ===== -->
+        <section id="about" class="about">
+            <div class="section-header">
+                <h2>Tentang <span>Saya</span></h2>
+                <div class="underline"></div>
+            </div>
+
+            <!-- GRID 2 KOLOM untuk Skills & Experience -->
+            <div class="about-grid">
+                <!-- SKILLS - Unordered List -->
+                <div class="skills-card">
+                    <div class="card-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Skills & Keahlian</h3>
+                    </div>
+
+                    <div class="skills-content">
+                        <h4>Frontend Development</h4>
+                        <ul class="skills-list">
+                            <li>HTML5 & CSS3 (Semantic, Flexbox, Grid)</li>
+                            <li>JavaScript (ES6+) & DOM Manipulation</li>
+                            <li>React.js (Hooks, Context, Router)</li>
+                            <li>Tailwind CSS & Bootstrap 5</li>
+                            <li>Responsive Web Design</li>
+                        </ul>
+
+                        <h4>Tools & Lainnya</h4>
+                        <ul class="skills-list">
+                            <li>Git & GitHub</li>
+                            <li>VS Code & Figma</li>
+                            <li>Chrome DevTools</li>
+                            <li>Basic UI/UX Design</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- EXPERIENCE - Ordered List -->
+                <div class="experience-card">
+                    <div class="card-header">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Pengalaman & Pendidikan</h3>
+                    </div>
+
+                    <div class="experience-content">
+                        <h4>Riwayat Pendidikan</h4>
+                        <ol class="education-list">
+                            <li>
+                                <strong>2021 - 2025</strong>
+                                <p>S1 Teknik Informatika - Universitas Indonesia (IPK: 3.8/4.0)</p>
+                            </li>
+                            <li>
+                                <strong>2018 - 2021</strong>
+                                <p>SMAN 3 Jakarta - Jurusan IPA</p>
+                            </li>
+                        </ol>
+
+                        <h4>Pengalaman Organisasi</h4>
+                        <ol class="experience-list">
+                            <li>
+                                <strong>2023 - Sekarang</strong>
+                                <p>Ketua Divisi Web Development - UKM Programming</p>
+                            </li>
+                            <li>
+                                <strong>2022 - 2023</strong>
+                                <p>Staff IT Support - BEM Fakultas Ilmu Komputer</p>
+                            </li>
+                            <li>
+                                <strong>2021 - 2022</strong>
+                                <p>Anggota Rohis - Divisi Multimedia</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS SECTION dengan GRID ===== -->
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <h2>Project <span>Saya</span></h2>
+                <div class="underline"></div>
+                <p>Berikut adalah beberapa project yang telah saya kerjakan selama ini.</p>
+            </div>
+
+            <!-- PROJECT GRID - Responsive dengan auto-fit minmax -->
+            <div class="project-grid">
+                <!-- Card 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="E-Commerce App">
+                        <div class="project-overlay">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce App</h3>
+                        <p>Aplikasi toko online dengan fitur keranjang belanja, autentikasi user, dan integrasi payment
+                            gateway.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Dashboard Admin">
+                        <div class="project-overlay">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Tailwind</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Admin Dashboard</h3>
+                        <p>Dashboard admin dengan grafik interaktif, manajemen data, dan dark mode menggunakan Chart.js.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Website portfolio pribadi dengan layout responsive menggunakan Flexbox dan Grid CSS.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Weather App">
+                        <div class="project-overlay">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">API</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>Aplikasi cuaca real-time dengan fetch API, menampilkan suhu, kelembaban, dan prediksi 5 hari.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Website portfolio pribadi dengan layout responsive menggunakan Flexbox dan Grid CSS.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="E-Commerce App">
+                        <div class="project-overlay">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce App</h3>
+                        <p>Aplikasi toko online dengan fitur keranjang belanja, autentikasi user, dan integrasi payment
+                            gateway.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJECT TIMELINE - HTML TABLE ===== -->
+        <section class="timeline-section">
+            <div class="section-header">
+                <h2>Project <span>Timeline</span></h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="table-container">
+                <table class="project-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Project</th>
+                            <th>Periode</th>
+                            <th>Teknologi</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>E-Commerce App</td>
+                            <td>Sep 2025 - Nov 2025</td>
+                            <td>React, Node.js, MongoDB</td>
+                            <td><span class="status ongoing">On Going</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Admin Dashboard</td>
+                            <td>Jul 2025 - Agu 2025</td>
+                            <td>Vue.js, Tailwind, Firebase</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Portfolio Website</td>
+                            <td>Jun 2025 - Jul 2025</td>
+                            <td>HTML5, CSS3, JavaScript</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Weather App</td>
+                            <td>Mei 2025 - Jun 2025</td>
+                            <td>JavaScript, OpenWeather API</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Task Management API</td>
+                            <td>Apr 2025 - Mei 2025</td>
+                            <td>Express.js, PostgreSQL</td>
+                            <td><span class="status planning">Planning</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT SECTION ===== -->
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2>Hubungi <span>Saya</span></h2>
+                <div class="underline"></div>
+                <p>Tertarik bekerja sama? Silakan hubungi saya melalui:</p>
+            </div>
+
+            <!-- MAKANAN FAVORIT - Unordered List -->
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3><i class="fas fa-heart"></i> Makanan Favorit</h3>
+                    <ul class="food-list">
+                        <li><i class="fas fa-utensils"></i> Mie Ayam</li>
+                        <li><i class="fas fa-fish"></i> Ikan Bakar</li>
+                        <li><i class="fas fa-pizza-slice"></i> Pizza Keju Mozarella</li>
+                        <li><i class="fas fa-ice-cream"></i> Es Cendol</li>
+                    </ul>
+
+                    <h3><i class="fas fa-music"></i> Hobi</h3>
+                    <ol class="hobby-list">
+                        <li>Jogging</li>
+                        <li>Fotografi</li>
+                        <li>Hiking & camping</li>
+                        <li>Coding is my life</li>
+                    </ol>
+                </div>
+
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>adamkandias03@gmail.com</p>
+                        <a href="mailto:adamkandias03@gmail.com">Kirim Pesan</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4>Telepon</h4>
+                        <p>+62 851-7501-1745</p>
+                        <a href="tel:+6285175011745">Hubungi</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Lokasi</h4>
+                        <p>Jakarta, Indonesia</p>
+                        <a href="https://maps.google.com" target="_blank">Lihat Peta</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Dias<span>.dev</span></h3>
+                <p>Frontend Developer & UI/UX Enthusiast</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Me</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Adam Kandias. All rights reserved. | Made with <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript untuk Mobile Menu -->
+    <script>
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
